@@ -78,7 +78,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     </tool>
   </lib>
   <lib desc="file#7400-lib.circ" name="7"/>
-  <main name="ULA"/>
+  <main name="ULA-CELULA-4BIT"/>
   <options>
     <a name="gateUndefined" val="ignore"/>
     <a name="simlimit" val="1000"/>
@@ -238,14 +238,14 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="font" val="SansSerif plain 16"/>
       <a name="halign" val="left"/>
     </comp>
-    <comp loc="(450,280)" name="ULA"/>
+    <comp loc="(450,280)" name="ULA-CELULA-4BIT"/>
     <comp lib="6" loc="(351,136)" name="Text">
       <a name="text" val="Unidade Lógica e Aritmética"/>
       <a name="font" val="SansSerif bold 22"/>
     </comp>
   </circuit>
-  <circuit name="ULA">
-    <a name="circuit" val="ULA"/>
+  <circuit name="ULA-CELULA-4BIT">
+    <a name="circuit" val="ULA-CELULA-4BIT"/>
     <a name="clabel" val=""/>
     <a name="clabelup" val="east"/>
     <a name="clabelfont" val="SansSerif plain 12"/>
@@ -254,8 +254,8 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <text fill="#ffffff" font-family="SansSerif" font-size="48" font-style="italic" font-weight="bold" text-anchor="middle" x="159" y="149">ULA</text>
       <polyline fill="none" points="102,164 214,164" stroke="#ffffff" stroke-width="3"/>
       <polyline fill="none" points="112,171 221,171" stroke="#ffffff" stroke-width="3"/>
-      <circ-port height="8" pin="130,50" width="8" x="46" y="76"/>
-      <circ-port height="8" pin="130,70" width="8" x="46" y="116"/>
+      <circ-port height="8" pin="100,50" width="8" x="46" y="76"/>
+      <circ-port height="8" pin="100,70" width="8" x="46" y="116"/>
       <circ-port height="10" pin="950,130" width="10" x="255" y="95"/>
       <circ-port height="10" pin="950,310" width="10" x="255" y="155"/>
       <circ-port height="10" pin="950,350" width="10" x="255" y="185"/>
@@ -300,7 +300,9 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(780,90)" to="(780,220)"/>
     <wire from="(520,90)" to="(520,100)"/>
     <wire from="(380,190)" to="(380,210)"/>
+    <wire from="(100,70)" to="(530,70)"/>
     <wire from="(110,290)" to="(150,290)"/>
+    <wire from="(100,50)" to="(460,50)"/>
     <wire from="(580,190)" to="(580,210)"/>
     <wire from="(130,410)" to="(290,410)"/>
     <wire from="(80,350)" to="(110,350)"/>
@@ -367,9 +369,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(320,350)" to="(320,390)"/>
     <wire from="(170,240)" to="(170,290)"/>
     <wire from="(790,260)" to="(790,320)"/>
-    <wire from="(130,70)" to="(530,70)"/>
     <wire from="(380,210)" to="(390,210)"/>
-    <wire from="(130,50)" to="(460,50)"/>
     <wire from="(180,210)" to="(190,210)"/>
     <wire from="(900,410)" to="(1100,410)"/>
     <wire from="(940,130)" to="(950,130)"/>
@@ -404,17 +404,17 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="font" val="SansSerif bold 14"/>
       <a name="halign" val="left"/>
     </comp>
-    <comp lib="0" loc="(130,70)" name="Pin">
-      <a name="width" val="4"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="B"/>
-    </comp>
     <comp lib="1" loc="(850,330)" name="NOT Gate"/>
     <comp lib="0" loc="(950,310)" name="Pin">
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
       <a name="label" val="C_out"/>
       <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="0" loc="(100,50)" name="Pin">
+      <a name="width" val="4"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="A"/>
     </comp>
     <comp lib="0" loc="(130,320)" name="Splitter">
       <a name="facing" val="west"/>
@@ -446,14 +446,14 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="halign" val="left"/>
     </comp>
     <comp loc="(390,210)" name="ULA-CELULA-1BIT"/>
+    <comp lib="0" loc="(100,70)" name="Pin">
+      <a name="width" val="4"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="B"/>
+    </comp>
     <comp lib="0" loc="(80,350)" name="Pin">
       <a name="tristate" val="false"/>
       <a name="label" val="S0"/>
-    </comp>
-    <comp lib="0" loc="(130,50)" name="Pin">
-      <a name="width" val="4"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="A"/>
     </comp>
     <comp lib="6" loc="(915,521)" name="Text">
       <a name="text" val="0      1      1           A + B"/>
