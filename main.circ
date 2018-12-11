@@ -77,7 +77,6 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="valign" val="base"/>
     </tool>
   </lib>
-  <lib desc="file#7400-lib.circ" name="7"/>
   <main name="ULA-CELULA-4BIT"/>
   <options>
     <a name="gateUndefined" val="ignore"/>
